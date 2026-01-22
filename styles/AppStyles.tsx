@@ -108,4 +108,45 @@ export default StyleSheet.create({
     color: "#fff",
     marginTop: 5,
   },
+
+  // Footer
+  footer: {
+    marginTop: 40,
+    paddingVertical: 15,
+    borderTopWidth: 1,
+    borderTopColor: "#888",
+    alignItems: "center",
+  },
+  footerText: {
+    fontSize: 14,
+    opacity: 0.7,
+  },
+
+  // Navbar
+  navbar: {
+    borderBottomWidth: 1,
+    borderBottomColor: "#888",
+    paddingBottom: 10,
+    marginBottom: 10,
+  },
+
+  navTopRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingHorizontal: 10,
+    paddingVertical: 10,
+  },
+
+  navTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+  },
+
+  navBottomRow: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    paddingVertical: 8,
+  },
+
 });
