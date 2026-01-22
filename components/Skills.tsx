@@ -1,40 +1,19 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text } from "react-native";
+import styles from "../styles/AppStyles";
 
-type SkillsProps = {
-  textColor: string;
-};
+type SkillsProps = { textColor: string };
 
 export default function Skills({ textColor }: SkillsProps) {
-  const skills: string[] = [
-    "React Native",
-    "React",
-    "Node.js",
-    "JavaScript",
-    "Firebase",
-  ];
+  const skills = ["React Native", "React", "Node.js", "JavaScript", "C++"];
 
   return (
     <View>
-      <Text style={[styles.title, { color: textColor }]}>Skills</Text>
-
+      <Text style={[styles.sectionTitle, { color: textColor }]}>Skills</Text>
       {skills.map((skill, index) => (
-        <Text key={index} style={[styles.item, { color: textColor }]}>
-          • {skill}
-        </Text>
+        <View key={index} style={styles.skillCard}>
+          <Text style={styles.skillText}>{skill}</Text>
+        </View>
       ))}
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
-    marginTop: 20,
-  },
-  item: {
-    fontSize: 16,
-    marginLeft: 10,
-    marginTop: 5,
-  },
-});

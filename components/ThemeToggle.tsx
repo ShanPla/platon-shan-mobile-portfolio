@@ -1,4 +1,5 @@
-import { View, Text, Switch, StyleSheet } from "react-native";
+import { View, Text, Switch } from "react-native";
+import styles from "../styles/AppStyles";
 
 type ThemeToggleProps = {
   darkMode: boolean;
@@ -12,19 +13,11 @@ export default function ThemeToggle({
   textColor,
 }: ThemeToggleProps) {
   return (
-    <View style={styles.row}>
-      <Text style={{ color: textColor }}>
+    <View style={styles.toggleRow}>
+      <Text style={{ color: textColor, fontWeight: "bold" }}>
         {darkMode ? "Dark Mode" : "Light Mode"}
       </Text>
       <Switch value={darkMode} onValueChange={setDarkMode} />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  row: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-  },
-});
