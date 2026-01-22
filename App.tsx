@@ -6,6 +6,7 @@ import Profile from "./components/Profile";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import ThemeToggle from "./components/ThemeToggle";
+import Projects from "./components/Projects";
 
 import styles from "./styles/AppStyles";
 
@@ -26,6 +27,7 @@ export default function App() {
 
       <Profile textColor={textColor} />
       <Skills textColor={textColor} />
+      <Projects textColor={textColor} darkMode={darkMode} />
       <Contact textColor={textColor} />
     </ScrollView>
   );

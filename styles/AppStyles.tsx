@@ -87,7 +87,7 @@ export default StyleSheet.create({
     borderRadius: 10,
   },
 
-  // Projects (placeholder)
+  // Projects
   projectCard: {
     backgroundColor: "#4A90E2",
     padding: 15,
