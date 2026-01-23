@@ -34,13 +34,13 @@ export default function Skills({ textColor, darkMode }: SkillsProps) {
     },
     {
       name: "Node.js",
-      level: 0.55,
-      label: "Comfortable",
+      level: 0.35,
+      label: "Intermediate",
       color: "#3C873A",
     },
     {
       name: "React Native",
-      level: 0.3,
+      level: 0.1,
       label: "Learning",
       color: "#0A7EA4",
     },
