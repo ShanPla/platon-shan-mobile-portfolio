@@ -2,14 +2,14 @@ import { useRef, useState } from "react";
 import { ScrollView, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 
-import Navbar from "./components/Navbar";
-import Profile from "./components/Profile";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Navbar from "./src/components/Navbar";
+import Profile from "./src/components/Profile";
+import Skills from "./src/components/Skills";
+import Projects from "./src/components/Projects";
+import Contact from "./src/components/Contact";
+import Footer from "./src/components/Footer";
 
-import styles from "./styles/AppStyles";
+import styles from "./src/styles/AppStyles";
 
 export default function App() {
   const scrollRef = useRef<ScrollView>(null);
