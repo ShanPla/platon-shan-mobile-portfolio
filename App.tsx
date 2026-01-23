@@ -53,7 +53,7 @@ export default function App() {
 
       {/* Skills */}
       <View onLayout={(e) => (skillsY.current = e.nativeEvent.layout.y)}>
-        <Skills textColor={textColor} />
+        <Skills textColor={textColor} darkMode={darkMode} />
       </View>
 
       {/* Projects */}
